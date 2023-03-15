@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Toxin home page</title>
+  </head>
+  <body>
+    <div class="section main-section">
+      <div class="container">
+        <header class="header">
+          <a href="#">
+            <img src="img/Logo.png" alt="" class="logo" />
+          </a>
+          <div class="header-items">
+            <nav class="main-nav">
+              <ul class="main-nav-list">
+                <li><a href="#" class="main-nav-link">О нас</a></li>
+                <li><a href="#" class="main-nav-link">Услуги</a></li>
+                <li><a href="#" class="main-nav-link">Вакансии</a></li>
+                <li><a href="#" class="main-nav-link">Новости</a></li>
+                <li><a href="#" class="main-nav-link">Соглашения</a></li>
+              </ul>
+            </nav>
+            <div class="btns">
+              <button class="btn btn--log">Войти</button>
+              <button class="btn btn--main">Зарегистрироваться</button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="bcg-img">
+        <div class="container container--main">
+          <div class="main-form">
+            <div class="find-room">
+              <h2>Найдём номера под ваши желания</h2>
+              <form action="#" class="find-form">
+                <div>
+                  <label class="label-text" for="arrival">Прибытие</label>
+                  <input id="arrival" type="date" required />
+                </div>
+
+                <div>
+                  <label class="label-text" for="departure">Отъезд</label>
+                  <input id="departure" type="date" required />
+                </div>
+
+                <div>
+                  <label class="label-text" for="guests">Гости</label>
+                  <select name="" id="guests" required></select>
+                </div>
+              </form>
+              <button class="btn btn--form btn--main">Подобрать номер</button>
+            </div>
+          </div>
+          <p class="main-text">
+            Лучшие номера для вашей работы, отдыха и просто вдохновения
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section footer-section">
+      <div class="container container--footer">
+        <div class="footer-item">
+          <a href="#">
+            <img src="img/Logo.png" alt="" class="logo" />
+          </a>
+          <p class="footer-text">
+            Бронирование номеров в лучшем отеле 2019 года по версии ассоциации
+            «Отельные взгляды»
+          </p>
+        </div>
+
+        <div class="footer-item">
+          <p class="label-text">Навигация</p>
+          <ul>
+            <li class="footer-nav-link">О нас</li>
+            <li class="footer-nav-link">Новости</li>
+            <li class="footer-nav-link">Служба поддержки</li>
+            <li class="footer-nav-link">Услуги</li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <p class="label-text">О нас</p>
+          <ul>
+            <li class="footer-nav-link">О сервисе</li>
+            <li class="footer-nav-link">Наша команда</li>
+            <li class="footer-nav-link">Вакансии</li>
+            <li class="footer-nav-link">Инвесторы</li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <p class="label-text">Служба поддержки</p>
+          <ul>
+            <li class="footer-nav-link">Соглашения</li>
+            <li class="footer-nav-link">Сообщества</li>
+            <li class="footer-nav-link">Связь с нами</li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <p class="label-text">Подписка</p>
+          <p class="footer-text">
+            Получайте специальные предложения и новости сервиса
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
