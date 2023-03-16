@@ -20,8 +20,8 @@ h2 {
 }
 
 .container {
-  width: 144rem;
-  padding: 0 14rem;
+  max-width: 116rem;
+  /* padding: 0 14rem; */
   margin: 0 auto;
 }
 
@@ -47,12 +47,22 @@ li {
   list-style: none;
 }
 
-.main-nav-link,
-.footer-nav-link {
+.main-nav-link:link,
+.main-nav-link:visited,
+.footer-nav-link:link,
+.footer-nav-link:visited {
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.5);
+}
+
+.main-nav-link:hover,
+.main-nav-link:active,
+.footer-nav-link:hover,
+.footer-nav-link:active {
+  color: rgb(31, 32, 65);
+  text-decoration: underline;
 }
 
 /* for current position in navigation/menu */
@@ -98,6 +108,9 @@ li {
 }
 
 .btn--form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 2rem;
   padding: 1.5rem 0 1.5rem 0;
   width: 100%;
@@ -130,7 +143,19 @@ li {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  /* gap: 2rem; */
+}
+
+.find-form .input {
+  flex-basis: 47%;
+}
+.find-form .select {
+  flex-basis: 100%;
+  margin-top: 2rem;
+}
+
+.find-form div:nth-child(2) {
+  margin-left: auto;
 }
 
 .find-form div {
@@ -161,19 +186,19 @@ select {
 .container--main {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  width: 100%;
 }
 
 .main-text {
   display: inline-block;
   text-align: right;
   align-self: end;
-  width: 30rem;
+  max-width: 30rem;
   margin-bottom: 2rem;
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(31, 32, 65, 0.75);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .footer-section {
@@ -194,10 +219,60 @@ select {
 
 .footer-text {
   display: inline-block;
-  width: 30rem;
+  max-width: 28rem;
   margin-bottom: 2rem;
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(31, 32, 65, 0.75);
-  line-height: 1.5;
+  line-height: 1.7;
+}
+
+.email {
+  border-radius: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.email::placeholder {
+  text-transform: none;
+  font-size: 1.4rem;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.copyright {
+  margin-top: 10rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.copyright .container {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  margin-left: auto;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.social-links li {
+  display: flex;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: rgb(188, 156, 255);
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(188, 156, 255, 0.5);
 }

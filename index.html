@@ -46,78 +46,117 @@
             <div class="find-room">
               <h2>Найдём номера под ваши желания</h2>
               <form action="#" class="find-form">
-                <div>
+                <div class="input">
                   <label class="label-text" for="arrival">Прибытие</label>
                   <input id="arrival" type="date" required />
                 </div>
 
-                <div>
+                <div class="input">
                   <label class="label-text" for="departure">Отъезд</label>
                   <input id="departure" type="date" required />
                 </div>
 
-                <div>
+                <div class="select">
                   <label class="label-text" for="guests">Гости</label>
                   <select name="" id="guests" required></select>
                 </div>
               </form>
-              <button class="btn btn--form btn--main">Подобрать номер</button>
+              <div class="btn btn--form btn--main">Подобрать номер</div>
             </div>
           </div>
-          <p class="main-text">
+          <div class="main-text">
             Лучшие номера для вашей работы, отдыха и просто вдохновения
-          </p>
+          </div>
         </div>
       </div>
     </div>
     <div class="section footer-section">
-      <div class="container container--footer">
-        <div class="footer-item">
-          <a href="#">
-            <img src="img/Logo.png" alt="" class="logo" />
-          </a>
-          <p class="footer-text">
-            Бронирование номеров в лучшем отеле 2019 года по версии ассоциации
-            «Отельные взгляды»
-          </p>
-        </div>
+      <div class="container">
+        <div class="container--footer">
+          <div class="footer-item">
+            <a href="#">
+              <img src="img/Logo.png" alt="" class="logo" />
+            </a>
+            <p class="footer-text">
+              Бронирование номеров в лучшем отеле 2019 года по версии ассоциации
+              «Отельные взгляды»
+            </p>
+          </div>
 
-        <div class="footer-item">
-          <p class="label-text">Навигация</p>
-          <ul>
-            <li class="footer-nav-link">О нас</li>
-            <li class="footer-nav-link">Новости</li>
-            <li class="footer-nav-link">Служба поддержки</li>
-            <li class="footer-nav-link">Услуги</li>
-          </ul>
-        </div>
+          <div class="footer-item">
+            <p class="label-text">Навигация</p>
+            <ul>
+              <li><a href="#" class="footer-nav-link">О нас</a></li>
+              <li><a href="#" class="footer-nav-link">Новости</a></li>
+              <li><a href="#" class="footer-nav-link">Служба поддержки</a></li>
+              <li><a href="#" class="footer-nav-link">Услуги</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-item">
-          <p class="label-text">О нас</p>
-          <ul>
-            <li class="footer-nav-link">О сервисе</li>
-            <li class="footer-nav-link">Наша команда</li>
-            <li class="footer-nav-link">Вакансии</li>
-            <li class="footer-nav-link">Инвесторы</li>
-          </ul>
-        </div>
+          <div class="footer-item">
+            <p class="label-text">О нас</p>
+            <ul>
+              <li><a href="#" class="footer-nav-link">О сервисе</a></li>
+              <li><a href="#" class="footer-nav-link">Наша команда</a></li>
+              <li><a href="#" class="footer-nav-link">Вакансии</a></li>
+              <li><a href="#" class="footer-nav-link">Инвесторы</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-item">
-          <p class="label-text">Служба поддержки</p>
-          <ul>
-            <li class="footer-nav-link">Соглашения</li>
-            <li class="footer-nav-link">Сообщества</li>
-            <li class="footer-nav-link">Связь с нами</li>
-          </ul>
-        </div>
+          <div class="footer-item">
+            <p class="label-text">Служба поддержки</p>
+            <ul>
+              <li><a href="#" class="footer-nav-link">Соглашения</a></li>
+              <li><a href="#" class="footer-nav-link">Сообщества</a></li>
+              <li><a href="#" class="footer-nav-link">Связь с нами</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-item">
-          <p class="label-text">Подписка</p>
-          <p class="footer-text">
-            Получайте специальные предложения и новости сервиса
-          </p>
+          <div class="footer-item">
+            <p class="label-text">Подписка</p>
+            <div class="footer-text">
+              Получайте специальные предложения и новости сервиса
+            </div>
+            <input class="email" type="email" placeholder="Email" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright-text">
+            Copyright © 2018 Toxin отель. Все права защищены.
+          </div>
+          <div class="social">
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#">
+                  <ion-icon class="social-icon" name="logo-twitter"> </ion-icon>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">
+                  <ion-icon class="social-icon" name="logo-facebook">
+                  </ion-icon>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">
+                  <ion-icon class="social-icon" name="logo-instagram">
+                  </ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
